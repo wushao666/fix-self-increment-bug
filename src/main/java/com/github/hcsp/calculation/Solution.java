@@ -2,7 +2,7 @@ package com.github.hcsp.calculation;
 
 public class Solution {
     public static void main(String[] args) {
-        printNumberTo10(6);
+        printNumberTo10(9);
     }
 
     // 打印从number开始到10的数字
