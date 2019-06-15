@@ -1,15 +1,13 @@
+
 package com.github.hcsp.calculation;
-
-import static org.hamcrest.Matchers.containsString;
-
-import com.github.blindpirate.extensions.CaptureSystemOutput;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;;import org.hamcrest.Matchers;;import com.github.blindpirate.extensions.CaptureSystemOutput;
 
 public class SolutionTest {
-    @Test
-    @CaptureSystemOutput
-    public void importStringUtilsCorrectly(CaptureSystemOutput.OutputCapture capture) {
-        capture.expect(containsString("5\n6\n7\n8\n9\n10"));
-        Solution.printNumberTo10(5);
-    }
+@Test
+@CaptureSystemOutput
+public void importStringUtilsCorrectly(CaptureSystemOutput.OutputCapture capture) {
+  capture.expect(Matchers.containsString(("(?s).*5\\s+6\\s+7\\s+8\\s+9\\s+10.*"))));
+  Solution.printNumberTo10(5);
+}
+
 }
