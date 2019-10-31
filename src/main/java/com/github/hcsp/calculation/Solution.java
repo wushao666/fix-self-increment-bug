@@ -1,5 +1,7 @@
 package com.github.hcsp.calculation;
 
+import java.sql.SQLSyntaxErrorException;
+
 public class Solution {
     public static void main(String[] args) {
         printNumberTo10(9);
@@ -10,11 +12,14 @@ public class Solution {
     // 例如，number=9，则打印9,10
     // 现在输出的结果和预期不符，请修复此问题
     public static void printNumberTo10(int number) {
-        while (true) {
-            System.out.println(++number);
-            if (number > 10) {
-                return;
+        if(number>10)
+            return;
+        else
+        {
+            for(;number<=10;number++){
+                System.out.println(number);
             }
+            return;
         }
     }
 }
