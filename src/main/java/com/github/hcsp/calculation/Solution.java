@@ -11,11 +11,9 @@ public class Solution {
     // 现在输出的结果和预期不符，请修复此问题
     public static void printNumberTo10(int number) {
         while (true) {
-
+            System.out.println(++number);
             if (number > 10) {
                 return;
-            }else {
-                System.out.println(number++);
             }
         }
     }
